@@ -3,6 +3,7 @@ rule SensitiveInfoDisclosure
     meta:
         description = "OWASP LLM02 - Detects potential sensitive information disclosure such as PII, proprietary data, or confidential business content"
         author = "fr0gger_"
+        category = "sensitive_info/pii"
         severity = "high"
         version = "1.0"
         uuid = "f7a0e5d4-539f-411a-84e1-fadd209a01d1"

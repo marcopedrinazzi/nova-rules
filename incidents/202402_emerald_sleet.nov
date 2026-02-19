@@ -29,8 +29,9 @@ rule UserEventResearch
         author = "@bees@infosec.exchange"
         uuid = "a9eb13b3-3c05-4975-9c63-6564ecfd9847"
         version = "1.0.0"
-        category = "LLM-enhanced scripting techniques"
+        category = "reconnaissance/logs"
         severity = "high"
+        attack_category = "LLM-enhanced scripting techniques"
         reference = "OpenAI + Microsoft Report 202402 - Emerald Sleet Recon"
 
     keywords:
