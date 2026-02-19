@@ -51,6 +51,7 @@ rule DPRKExpertSpearPhishing
         description = "Content for use in spear-phishing campaigns against individuals with DPRK and regime expertise."
         author = "@bees@infosec.exchange"
         version = "1.0.0"
+        uuid = "90f79a68-9210-42a2-8a35-ca88f24fa7ba"
         category = "reconnaissance/social engineering"
         severity = "high"
         attack_category = "LLM-supported social engineering"
@@ -72,6 +73,7 @@ rule DPRKNGORecon
     meta:
         description = "Researching organizations with DPRK-focused defense or nuclear proliferation research"
         author = "@bees@infosec.exchange"
+        uuid = "56bdb9bd-000b-49ce-9550-1136acd70d31"
         version = "1.0.0"
         category = "reconnaissance/research"
         severity = "high"

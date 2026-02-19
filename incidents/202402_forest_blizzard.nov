@@ -3,6 +3,7 @@ rule OperationsResearch
     meta:
         description = "Detects reference of sensitive but not classified satellite, radar, or radio protocols"
         author = "@bees@infosec.exchange"
+        uuid = "193459c9-dceb-484f-bca8-01ce2d072fcd"
         version = "1.0.0"
         category = "reconnaissance/vulnerability"
         severity = "high"
@@ -27,6 +28,7 @@ rule ScriptingSupport
     meta:
         description = "Detects references to a range of Python-centric scripting support requirements"
         author = "@bees@infosec.exchange"
+        uuid = "4572b79f-39a8-4dc3-a981-4fc6b6d8b051"
         version = "1.0.0"
         category = "support"
         severity = "high"

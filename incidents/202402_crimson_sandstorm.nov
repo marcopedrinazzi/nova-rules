@@ -3,6 +3,7 @@ rule PhishingCrimsonSandstorm
     meta:
         description = "Detection of Crimson Sandstorm phishing prompts, specifically for commonly targeted industries and geographic regions"
         author = "@tas_kmanager"
+        uuid = "3c10419e-c579-4c99-825a-9d593e7fec82"
         version = "1.0.0"
         category = "reconnaissance/social engineering"
         severity = "medium"
@@ -26,6 +27,7 @@ rule DefenseEvasionCodeCrimsonSandstorm
     meta:
         description = "Detection of Crimson Sandstorm defense evasion coding prompts, specifically code for evasion or code for cleanup."
         author = "@tas_kmanager"
+        uuid = "63a921d1-dd1e-4754-be97-ff664dbe713d"
         version = "1.0.0"
         category = "support"
         severity = "medium"
@@ -48,6 +50,7 @@ rule DefenseEvasionAvCrimsonSandstorm
     meta:
         description = "Detection of Crimson Sandstorm defense evasion coding prompts, specifically AV bypass"
         author = "@tas_kmanager"
+        uuid = "74387f6c-3dbe-4f37-a884-a9d61904cb11"
         version = "1.0.0"
         category = "support"
         severity = "medium"
