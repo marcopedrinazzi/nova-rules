@@ -56,6 +56,12 @@ def validate_rule_metadata(
     warnings = []
     meta = rule.meta
 
+    # Check for unknown fields
+    allowed_fields = set(REQUIRED_FIELDS) | set(RECOMMENDED_FIELDS)
+    unknown_fields = set(meta.keys()) - allowed_fields
+    for field in unknown_fields:
+        errors.append(f"Unknown metadata field '{field}'")
+
     # Check required fields
     for field in REQUIRED_FIELDS:
         if field not in meta or not str(meta[field]).strip():
