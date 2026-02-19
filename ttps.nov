@@ -343,6 +343,7 @@ rule MalwareCreationRule {
         author = "Nikolaos Chrysaidos"
         description = "Detects LLM jailbreak prompts for malware generation"
         version = "1.0.0"
+        category = "malware/creation"
         severity = "high"
         attack_category = "LLM-supported malware creation"
         uuid = "cb9e297f-cd23-40fd-9699-5b15be5b51ed"

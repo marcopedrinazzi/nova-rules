@@ -23,6 +23,7 @@ These categories follow the `category/subcategory` format and are used for granu
 ### Jailbreak
 - `jailbreak/cognitive`
 - `jailbreak/dan`
+- `jailbreak/developer_mode`
 - `jailbreak/encoding`
 - `jailbreak/indirect`
 - `jailbreak/injection`
@@ -54,6 +55,9 @@ These categories follow the `category/subcategory` format and are used for granu
 - `scripting/messaging`
 - `scripting/python`
 - `scripting/security_tools`
+
+### Malware
+- `malware/creation`
 
 ### Data & Information
 - `sensitive_info/pii`
