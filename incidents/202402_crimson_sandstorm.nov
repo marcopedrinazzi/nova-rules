@@ -1,4 +1,4 @@
-rule Phishing_CrimsonSandstorm
+rule PhishingCrimsonSandstorm
 {
     meta:
         description = "Detection of Crimson Sandstorm phishing prompts, specifically for commonly targeted industries and geographic regions"
@@ -21,7 +21,7 @@ rule Phishing_CrimsonSandstorm
         (keywords.$geo_target and keywords.$industry_target and keywords.$lure) and llm.$phishing
 }
 
-rule DefenseEvasionCode_CrimsonSandstorm
+rule DefenseEvasionCodeCrimsonSandstorm
 {
     meta:
         description = "Detection of Crimson Sandstorm defense evasion coding prompts, specifically code for evasion or code for cleanup."
@@ -43,7 +43,7 @@ rule DefenseEvasionCode_CrimsonSandstorm
         (keywords.$evasion or keywords.$cleanup) and llm.$defense_evasion
 }
 
-rule DefenseEvasionAV_CrimsonSandstorm
+rule DefenseEvasionAVCrimsonSandstorm
 {
     meta:
         description = "Detection of Crimson Sandstorm defense evasion coding prompts, specifically AV bypass"
