@@ -35,8 +35,13 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -r requirements.txt
+
       - name: Run syntax validation
-        run: uv run --python 3.11 --with-requirements requirements.txt validation/validate_syntax.py --rules-dir . -v
+        run: uv run validation/validate_syntax.py --rules-dir . -v
 
   metadata:
     name: Metadata Validation
@@ -50,8 +55,13 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -r requirements.txt
+
       - name: Run metadata validation
-        run: uv run --python 3.11 --with-requirements requirements.txt validation/validate_metadata.py --rules-dir . -v
+        run: uv run validation/validate_metadata.py --rules-dir . -v
 
   lint:
     name: Lint Rules
@@ -65,8 +75,13 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -r requirements.txt
+
       - name: Run lint checks
-        run: uv run --python 3.11 --with-requirements requirements.txt validation/lint_rules.py --rules-dir . -v
+        run: uv run validation/lint_rules.py --rules-dir . -v
 
   test:
     name: Rule Tests
@@ -91,6 +106,11 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -r requirements.txt
+
       - name: Cache HuggingFace models
         uses: actions/cache@v4
         with:
@@ -99,4 +119,4 @@ jobs:
           restore-keys: ${{ runner.os }}-hf-
 
       - name: Run rule tests
-        run: uv run --python 3.11 --with-requirements requirements.txt tests/test_rules.py --rules-dir . --tests-dir tests/ -v
+        run: uv run tests/test_rules.py --rules-dir . --tests-dir tests/ -v
