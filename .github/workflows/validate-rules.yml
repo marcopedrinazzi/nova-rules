@@ -19,7 +19,6 @@ on:
       - 'tests/**'
       - 'requirements.txt'
       - '.github/workflows/validate-rules.yml'
-  workflow_dispatch:
 
 permissions:
   contents: read
