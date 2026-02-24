@@ -163,8 +163,10 @@ This is when you run with `python3 tests/test_rules.py --llm-testing --llm-provi
 
 The GitHub Actions workflow runs four stages on push/PR to `main`:
 
-1. **Syntax Validation** — parses all `.nov` files
-2. **Metadata Validation** — checks required meta fields (runs after syntax)
-3. **Lint** — checks for best practices (runs after syntax)
-4. **Rule Tests** — runs YAML test cases with keyword + semantic matching (runs after syntax)
+1. **Syntax Validation** — parses all `.nov` files.
+2. **Metadata Validation** — checks required meta fields (runs after syntax).
+3. **Lint** — checks for best practices and naming conventions (runs after syntax).
+4. **Rule Tests** — validates and runs YAML test cases (runs after syntax).
+    - **YAML Linting**: Test files are strictly linted using `yamllint`. Incorrect indentation or formatting will cause the job to fail.
+    - **Functional Tests**: Checks keyword and semantic matching logic.
 
