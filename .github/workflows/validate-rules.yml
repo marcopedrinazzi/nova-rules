@@ -41,7 +41,7 @@ jobs:
           uv pip install -r requirements.txt
 
       - name: Run syntax validation
-        run: uv run validation/validate_syntax.py --rules-dir . -v
+        run: uv run --no-project validation/validate_syntax.py --rules-dir . -v
 
   metadata:
     name: Metadata Validation
@@ -61,7 +61,7 @@ jobs:
           uv pip install -r requirements.txt
 
       - name: Run metadata validation
-        run: uv run validation/validate_metadata.py --rules-dir . -v
+        run: uv run --no-project validation/validate_metadata.py --rules-dir . -v
 
   lint:
     name: Lint Rules
@@ -81,7 +81,7 @@ jobs:
           uv pip install -r requirements.txt
 
       - name: Run lint checks
-        run: uv run validation/lint_rules.py --rules-dir . -v
+        run: uv run --no-project validation/lint_rules.py --rules-dir . -v
 
   test:
     name: Rule Tests
@@ -119,4 +119,4 @@ jobs:
           restore-keys: ${{ runner.os }}-hf-
 
       - name: Run rule tests
-        run: uv run tests/test_rules.py --rules-dir . --tests-dir tests/ -v
+        run: uv run --no-project tests/test_rules.py --rules-dir . --tests-dir tests/ -v
