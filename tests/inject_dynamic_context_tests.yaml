@@ -1,4 +1,4 @@
-rule_file: "rules/inject_dynamic_context.nov"
+rule_file: "inject_dynamic_context.nov"
 tests:
   - name: "Matches injected dynamic context skill with command placeholders"
     rule_name: "InjectDynamicContext"
