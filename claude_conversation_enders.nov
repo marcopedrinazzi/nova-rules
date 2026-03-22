@@ -6,7 +6,7 @@ rule ClaudeConversationEnders
         version = "1.0.0"
         category = "prompt_manipulation/indirect_injection"
         severity = "medium"
-        uuid = "b9089502-2547-48e6-b4f4-86d63fd2477b"
+        uuid = "8f2d9414-5aa7-4765-b2eb-4a50bb664502"
         date = "2026-03-22"
         reference="https://github.com/elder-plinius/L1B3RT4S/blob/64960b783249d36f76a48a33103cc4b168332b9b/ANTHROPIC.mkd#claudeai-conversation-enders"
 
